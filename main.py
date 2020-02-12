@@ -18,32 +18,15 @@ def speak(word):
 #pyttsx3
 bot1=ChatBot("My Bot",storage_adapter="chatterbot.storage.SQLStorageAdapter")
 trainer=ListTrainer(bot1)
-'''trainer.train(['What are the skills of rishabh?', 'rishabh skill set are Communication,Analytical and problem-solving skills,Flexibility and adaptability'])
-trainer.train(['What are the skills of anurag?', 'anurag skills are Programming languages,Common operating systems,Software proficiency,Technical writing,Project management,Data analysis' ])
-trainer.train(['What are technical skills?','A technical skill is the ability to carry out a task associated with technical roles such as IT, engineering, mechanics, science or finance'])
-trainer.train(['What are programming skills of abhishek?','C#, SQL, Java, C++, HTML, JavaScript, XML, C, Perl'])
-trainer.train(['What are programming skills of pranjul?','Python, PHP, Objective-C, AJAX, ASP.NET'])
-trainer.train(['What is the job level of rishabh','he is a senior executive.he works in an executive management'])
-trainer.train(['What is the job level of anurag','he is a executive.he works in an executive management'])
-trainer.train(['What is the job level of pranjul','he is a senior director.he works in a middle management'])
-trainer.train(['What is the job level of abhishek','he is a director.he works in a middle management'])
-trainer.train(['What is the job level of rachit','he is a senior manager.he works in a managers and advisors section'])
-trainer.train(['What is the job level of sreshta','she is a manager.she works in a managers and advisors section'])'''
 
+#rahul levels
+trainer.train(['what is the proficiency level of rahul in business acumen?','2','what is the proficiency of rahul in business acumen?','2','proficiency of rahul in business acumen','2','what is the level of rahul in business acumen?','2','level of rahul in business acumen','2'])
+trainer.train(['what is the proficiency level of rahul in data analysis?','2','what is the proficiency of rahul in data analysis?','2','proficiency of rahul in data analysis','2','what is the level of rahul in data analysis?','2','level of rahul in data analysis','2'])
+trainer.train(['what is the proficiency level of rahul in advanced data analytics?','3','what is the proficiency of rahul in advanced data analytics?','3','proficiency of rahul in advanced data analytics','3','what is the level of rahul in advanced data analytics?','3','level of rahul in advanced data analytics','3'])
+trainer.train(['what is the proficiency level of rahul in data visualization?','2','what is the proficiency of rahul in data visualization?','2','proficiency of rahul in data visualization','2','what is the level of rahul in data visualization?','2','level of rahul in data visualization','2'])
+trainer.train(['what is the proficiency level of rahul in data warehousing?','1','what is the proficiency of rahul in data warehousing?','1','proficiency of rahul in data warehousing','1','what is the level of rahul in data warehousing?','1','level of rahul in data warehousing','1'])
+trainer.train(['what is the proficiency level of rahul in substantive hr knowledge?','2','what is the proficiency of rahul in substantive hr knowledge?','2','proficiency of rahul in substantive hr knowledge','2','what is the level of rahul in substantive hr knowledge?','2','level of rahul in substantive hr knowledge','2'])
 
-'''convo={
-    'hello',
-    'hi there !',
-    'what is your name ?',
-    'My name is Bot , i am created by team Wired ',
-    'how are you ?',
-    'I am doing great these days',
-    'thank you',
-    'In which city you live ?',
-    'I live in bangalore',
-    'In which language you talk ?',
-    'I mostly talk in english'
-}'''
 
 trainer=ChatterBotCorpusTrainer(bot1)
 trainer.train("chatterbot.corpus.english")
