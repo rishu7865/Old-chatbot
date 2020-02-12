@@ -18,7 +18,7 @@ def speak(word):
 #pyttsx3
 bot1=ChatBot("My Bot",storage_adapter="chatterbot.storage.SQLStorageAdapter")
 trainer=ListTrainer(bot1)
-trainer.train(['What are the skills of rishabh?', 'rishabh skill set are Communication,Analytical and problem-solving skills,Flexibility and adaptability'])
+'''trainer.train(['What are the skills of rishabh?', 'rishabh skill set are Communication,Analytical and problem-solving skills,Flexibility and adaptability'])
 trainer.train(['What are the skills of anurag?', 'anurag skills are Programming languages,Common operating systems,Software proficiency,Technical writing,Project management,Data analysis' ])
 trainer.train(['What are technical skills?','A technical skill is the ability to carry out a task associated with technical roles such as IT, engineering, mechanics, science or finance'])
 trainer.train(['What are programming skills of abhishek?','C#, SQL, Java, C++, HTML, JavaScript, XML, C, Perl'])
@@ -28,7 +28,7 @@ trainer.train(['What is the job level of anurag','he is a executive.he works in 
 trainer.train(['What is the job level of pranjul','he is a senior director.he works in a middle management'])
 trainer.train(['What is the job level of abhishek','he is a director.he works in a middle management'])
 trainer.train(['What is the job level of rachit','he is a senior manager.he works in a managers and advisors section'])
-trainer.train(['What is the job level of sreshta','she is a manager.she works in a managers and advisors section'])
+trainer.train(['What is the job level of sreshta','she is a manager.she works in a managers and advisors section'])'''
 
 
 '''convo={
