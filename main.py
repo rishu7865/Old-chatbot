@@ -111,6 +111,14 @@ trainer.train(['Level of kaustubh in data visualization','3','What is the profic
 trainer.train(['Level of kaustubh in data and warehousing','1','What is the proficiency level of kaustubh in data and warehousing','1','what is the level of kaustubh in data and warehousing','1','What is the proficiency of kaustubh in data and warehousing','1','proficiency of kaustubh in data and warehousing','1'])
 trainer.train(['Level of kaustubh in substantive hr knowledge','3','What is the proficiency level of kaustubh in substantive hr knowledge','3','what is the level of kaustubh in substantive hr knowledge','3','What is the proficiency of kaustubh in substantive hr knowledge','3','proficiency of kaustubh in substantive hr knowledge','3'])
 
+#most proficiency
+trainer.train(['who is most proficient in business acumen','shubham and pranjul','most proficient in business acumen','shubham and pranjul'])
+trainer.train(['who is most proficient in data analysis','rishabh kaustubh and pratik','most proficient in data analysis','rishabh kaustubh and pratik'])
+trainer.train(['who is most proficient in advanced data analysis','anurag abhishek and rachit','most proficient in advanced data analysis','anurag abhishek and rachit'])
+trainer.train(['who is most proficient in data visualization','anurag kaustubh and pratik','most proficient in data visualization','anurag kaustubh and pratik'])
+trainer.train(['who is most proficient in data and warehousing','abhishek pratik and kanjam','most proficient in data and warehousing','abhishek pratik and kanjam'])
+trainer.train(['who is most proficient in substantive hr knowledge','kaustubh and kanjam','most proficient in substantive hr knowledge','kaustubh and kanjam'])
+
 trainer=ChatterBotCorpusTrainer(bot1)
 trainer.train("chatterbot.corpus.english")
 #now training the bot with the help of trainer
