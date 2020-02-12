@@ -164,7 +164,7 @@ def ask_from_bot():
     elif(answer_from_bot1=='2'):
         msgs.insert(END,"bot : "+"Employee has intermediate level in this field")
         speak("Employee has intermediate level in this field")
-    else:
+    elif(answer_from_bot1=='3'):
         msgs.insert(END,"bot : "+"Employee has advanced level in this field")
         speak("Employee has advanced level in this field")
     textF.delete(0,END)
