@@ -160,6 +160,18 @@ def ask_from_bot():
     msgs.insert(END,"you : "+query)
     msgs.insert(END, "bot : " + str(answer_from_bot))
     speak(answer_from_bot)
+    if(answer_from_bot=='0'):
+        msgs.insert(END,"bot : " +"Employee has no capability in this field")
+        speak("Employee has no capability in this field")
+    elif(answer_from_bot=='1'):
+        msgs.insert(END,"bot : " +"Employee has basic level in this field")
+        speak("Employee has basic level in this field")
+    elif(answer_from_bot=='2'):
+        msgs.insert(END,"bot : "+"Employee has intermediate level in this field")
+        speak("Employee has intermediate level in this field")
+    else:
+        msgs.insert(END,"bot : "+"Employee has advanced level in this field")
+        speak("Employee has advanced level in this field")
     textF.delete(0,END)
     msgs.yview(END)
 
