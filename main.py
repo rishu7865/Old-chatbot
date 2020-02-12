@@ -19,6 +19,18 @@ def speak(word):
 bot1=ChatBot("My Bot",storage_adapter="chatterbot.storage.SQLStorageAdapter")
 trainer=ListTrainer(bot1)
 
+
+'''Proficiency level
+  --------------------------------------------------------------------------------------------------
+   0 = No Capability
+  --------------------------------------------------------------------------------------------------
+   1 = Basic Level
+  -------------------------------------------------------------------------------------------------- 
+   2 = Intermediate level
+  -------------------------------------------------------------------------------------------------- 
+   3 = Advanced Level
+  --------------------------------------------------------------------------------------------------'''
+
 #rahul levels
 trainer.train(['what is the proficiency level of rahul in business acumen?','2','what is the proficiency of rahul in business acumen?','2','proficiency of rahul in business acumen','2','what is the level of rahul in business acumen?','2','level of rahul in business acumen','2'])
 trainer.train(['what is the proficiency level of rahul in data analysis?','2','what is the proficiency of rahul in data analysis?','2','proficiency of rahul in data analysis','2','what is the level of rahul in data analysis?','2','level of rahul in data analysis','2'])
@@ -26,6 +38,7 @@ trainer.train(['what is the proficiency level of rahul in advanced data analytic
 trainer.train(['what is the proficiency level of rahul in data visualization?','2','what is the proficiency of rahul in data visualization?','2','proficiency of rahul in data visualization','2','what is the level of rahul in data visualization?','2','level of rahul in data visualization','2'])
 trainer.train(['what is the proficiency level of rahul in data warehousing?','1','what is the proficiency of rahul in data warehousing?','1','proficiency of rahul in data warehousing','1','what is the level of rahul in data warehousing?','1','level of rahul in data warehousing','1'])
 trainer.train(['what is the proficiency level of rahul in substantive hr knowledge?','2','what is the proficiency of rahul in substantive hr knowledge?','2','proficiency of rahul in substantive hr knowledge','2','what is the level of rahul in substantive hr knowledge?','2','level of rahul in substantive hr knowledge','2'])
+
 #kanjam levels
 trainer.train(['what is the proficiency level of kanjam in business acumen?','1','what is the proficiency of kanjam in business acumen?','1','proficiency of kanjam in business acumen','1','what is the level of kanjam in business acumen?','1','level of kanjam in business acumen','1'])
 trainer.train(['what is the proficiency level of kanjam in data analysis?','2','what is the proficiency of kanjam in data analysis?','2','proficiency of kanjam in data analysis','2','what is the level of kanjam in data analysis?','2','level of kanjam in data analysis','2'])
@@ -33,6 +46,7 @@ trainer.train(['what is the proficiency level of kanjam in advanced data analyti
 trainer.train(['what is the proficiency level of kanjam in data visualization?','0','what is the proficiency of kanjam in data visualization?','0','proficiency of kanjam in data visualization','0','what is the level of kanjam in data visualization?','0','level of kanjam in data visualization','0'])
 trainer.train(['what is the proficiency level of kanjam in data warehousing?','3','what is the proficiency of kanjam in data warehousing?','3','proficiency of kanjam in data warehousing','3','what is the level of kanjam in data warehousing?','3','level of kanjam in data warehousing','3'])
 trainer.train(['what is the proficiency level of kanjam in substantive hr knowledge?','3','what is the proficiency of kanjam in substantive hr knowledge?','3','proficiency of kanjam in substantive hr knowledge','3','what is the level of kanjam in substantive hr knowledge?','3','level of kanjam in substantive hr knowledge','3'])
+
 #rachit levels
 trainer.train(['what is the proficiency level of rachit in business acumen?','2','what is the proficiency of rachit in business acumen?','2','proficiency of rachit in business acumen','2','what is the level of rachit in business acumen?','2','level of rachit in business acumen','2'])
 trainer.train(['what is the proficiency level of rachit in data analysis?','1','what is the proficiency of rachit in data analysis?','1','proficiency of rachit in data analysis','1','what is the level of rachit in data analysis?','1','level of rachit in data analysis','1'])
@@ -40,6 +54,7 @@ trainer.train(['what is the proficiency level of rachit in advanced data analyti
 trainer.train(['what is the proficiency level of rachit in data visualization?','3','what is the proficiency of rachit in data visualization?','3','proficiency of rachit in data visualization','3','what is the level of rachit in data visualization?','3','level of rachit in data visualization','3'])
 trainer.train(['what is the proficiency level of rachit in data warehousing?','2','what is the proficiency of rachit in data warehousing?','2','proficiency of rachit in data warehousing','2','what is the level of rachit in data warehousing?','2','level of rachit in data warehousing','2'])
 trainer.train(['what is the proficiency level of rachit in substantive hr knowledge?','2','what is the proficiency of rachit in substantive hr knowledge?','2','proficiency of rachit in substantive hr knowledge','2','what is the level of rachit in substantive hr knowledge?','2','level of rachit in substantive hr knowledge','2'])
+
 #pratik levels
 trainer.train(['what is the proficiency level of pratik in business acumen?','2','what is the proficiency of pratik in business acumen?','2','proficiency of pratik in business acumen','2','what is the level of pratik in business acumen?','2','level of pratik in business acumen','2'])
 trainer.train(['what is the proficiency level of pratik in data analysis?','3','what is the proficiency of pratik in data analysis?','3','proficiency of pratik in data analysis','3','what is the level of pratik in data analysis?','3','level of pratik in data analysis','3'])
@@ -47,6 +62,7 @@ trainer.train(['what is the proficiency level of pratik in advanced data analyti
 trainer.train(['what is the proficiency level of pratik in data visualization?','2','what is the proficiency of pratik in data visualization?','2','proficiency of pratik in data visualization','2','what is the level of pratik in data visualization?','2','level of pratik in data visualization','2'])
 trainer.train(['what is the proficiency level of pratik in data warehousing?','3','what is the proficiency of pratik in data warehousing?','3','proficiency of pratik in data warehousing','3','what is the level of pratik in data warehousing?','3','level of pratik in data warehousing','3'])
 trainer.train(['what is the proficiency level of pratik in substantive hr knowledge?','2','what is the proficiency of pratik in substantive hr knowledge?','2','proficiency of pratik in substantive hr knowledge','2','what is the level of pratik in substantive hr knowledge?','2','level of pratik in substantive hr knowledge','2'])
+
 #pranjul skills
 trainer.train(['what is the proficiency level of pranjul in business acumen?','3','what is the proficiency of pranjul in business acumen?','3','proficiency of pranjul in business acumen','3','what is the level of pranjul in business acumen?','3','level of pranjul in business acumen','3'])
 trainer.train(['what is the proficiency level of pranjul in data analysis?','2','what is the proficiency of pranjul in data analysis?','2','proficiency of pranjul in data analysis','2','what is the level of pranjul in data analysis?','2','level of pranjul in data analysis','2'])
