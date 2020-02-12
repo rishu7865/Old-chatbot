@@ -9,7 +9,7 @@ import pyttsx3 as pp
 engine=pp.init()
 voices=engine.getProperty('voices')
 print(voices)
-engine.setProperty('voice',voices[1].id)
+engine.setProperty('voice',voices[0].id)
 
 
 def speak(word):
@@ -123,17 +123,6 @@ trainer=ChatterBotCorpusTrainer(bot1)
 trainer.train("chatterbot.corpus.english")
 #now training the bot with the help of trainer
 
-#trainer.train(convo)
-#answer=bot.get_response("hello")
-#print(answer)
-#print('Talk to bot')
-'''while True:
-    query=input()
-    if query=='exit':
-        break
-    answer=bot.get_response(query)
-    print("bot : ",answer)'''
-
 main=Tk()
 main.geometry("500x650")
 main.title("My Chat bot")
@@ -148,12 +137,17 @@ def takeQuery():
     sr.pause_threshold=1
     print("your bot is listening try to speak")
     with s.Microphone() as m:
-        audio=sr.listen(m)
-        query=sr.recognize_google(audio,language='eng-in')
-        print(query)
-        textF.delete(0,END)
-        textF.insert(0,query)
-        ask_from_bot()
+        try:
+            audio = sr.listen(m)
+            query = sr.recognize_google(audio, language='eng-in')
+            print(query)
+            textF.delete(0, END)
+            textF.insert(0, query)
+            ask_from_bot()
+        except Exception as e:
+            print(e)
+            print("not recognized")
+        
 def ask_from_bot():
     query=textF.get()
     answer_from_bot=bot1.get_response(query)
@@ -194,6 +188,6 @@ def enter_function(event):
 
 #going to bind main window with enter key...
 main.bind('<Return>',enter_function)
-t=threading.Thread(target=takeQuery)
+t=threading.Thread(target=repeatL)
 t.start()
 main.mainloop()
